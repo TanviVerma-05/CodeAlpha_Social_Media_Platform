@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feed</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h2>Mini Social</h2>
+      <div>
+        <a href="/profile.html"> Profile </a>
+        <button id="logoutBtn">Logout</button>
+      </div>
+    </nav>
+
+    <div class="search-container">
+      <input type="text" id="searchUser" placeholder="🔍 Search users..." />
+
+      <div id="searchResults"></div>
+    </div>
+
+    <div class="create-post">
+      <textarea id="caption" placeholder="What's on your mind?"></textarea>
+      <input type="file" id="image" />
+      <button id="postBtn">Post</button>
+    </div>
+
+    <div class="feed-container" id="feedContainer"></div>
+
+    <script src="./js/feed.js"></script>
+  </body>
+</html>
